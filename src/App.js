@@ -1,25 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import footerImage from './assets/images/footer-coffee.png';
+import Card from './components/Card/Card';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (<>
+    {/* This is only an example using the Card component */}
+    <Card image={{ url: footerImage }} title="This is an Example" subtitle="Testing" align='left' />
+  </>);
 }
 
 export default App;
