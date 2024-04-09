@@ -13,7 +13,7 @@ import photo1313 from '../../assets/images/photo1313.jpg';
 export default function Menu() {
     return (
         <div>
-            <h1>Our favorites Meny</h1>
+            <h1>Our favorites Menu</h1>
             <Card image={{ url: photo6, width: 15, height: 15 }} title="Coffee beans from Colombia" subtitle="$39" align='left' />
              <Card image={{ url: photo7, width: 15, height: 15 }} title="Coffee beans" subtitle="$30" align='left' />
              <Card image={{ url: photo8, width: 15, height: 15 }} title="Latte" subtitle="$5" align='left' />
