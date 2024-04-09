@@ -1,9 +1,5 @@
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
-
 .hero {
-  background: url("./assets/images/coffee-bean.png") repeat center center
-    #1e1e1e;
+    height: 100dvh;
+    background: url("./assets/images/coffee-bean.png") repeat center center
+        #1e1e1e;
 }
