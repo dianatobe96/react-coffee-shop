@@ -1,11 +1,11 @@
 import './App.css';
-import footerImage from './assets/images/footer-coffee.png';
-import Card from './components/Card/Card';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (<>
-    {/* This is only an example using the Card component */}
-    <Card image={{ url: footerImage }} title="This is an Example" subtitle="Testing" align='left' />
+    <section className='hero'>
+      <Navbar />
+    </section>
   </>);
 }
 
