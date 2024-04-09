@@ -1,4 +1,4 @@
-import "./Team.css"
+import "./Team.css";
 import Card from "../Card/Card";
 import chef1 from "../../assets/images/chef1.jpg";
 import chef2 from "../../assets/images/chef2.jpg";
