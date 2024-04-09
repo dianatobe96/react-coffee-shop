@@ -1,28 +1,32 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  & h1,
-  & a {
-    color: white;
-  }
-
-  & ul {
     display: flex;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
 
-    & li:not(:last-of-type) {
-      margin-right: 1rem;
-    }
-
+    & span,
     & a {
-      text-decoration: none;
-
-      &:hover,
-      &.active {
-        color: #bc9a6c;
-      }
+        color: white;
     }
-  }
+
+    & span {
+        font-size: 1.2em;
+    }
+
+    & ul {
+        display: flex;
+        list-style: none;
+
+        & li:not(:last-of-type) {
+            margin-right: 1rem;
+        }
+
+        & a {
+            text-decoration: none;
+
+            &:hover,
+            &.active {
+                color: #bc9a6c;
+            }
+        }
+    }
 }
