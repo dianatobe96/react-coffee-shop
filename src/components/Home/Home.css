@@ -1,0 +1,43 @@
+#home {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 1rem;
+
+    & button {
+        color: white;
+        font-weight: bold;
+        background-color: #bc9a6c;
+        padding: 1.2em 3em;
+        margin-top: 3rem;
+
+        &:hover {
+            background-color: #bca585;
+        }
+    }
+
+    & .left-side {
+        flex: 1;
+        padding: 0 5rem;
+
+        & h1 {
+            color: #bc9a6c;
+            margin: 0.3em 0 0 0;
+        }
+
+        & .welcome-text {
+            border: 1px solid #bc9a6c;
+            padding: 0.5em;
+        }
+    }
+
+    & .right-side {
+        flex: 1;
+        text-align: center;
+
+        & img {
+            max-width: 65svh;
+        }
+    }
+}
