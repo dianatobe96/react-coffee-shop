@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & h1,
+  & a {
+    color: white;
+  }
+
+  & ul {
+    display: flex;
+    list-style: none;
+
+    & li:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+
+    & a {
+      text-decoration: none;
+
+      &:hover,
+      &.active {
+        color: #bc9a6c;
+      }
+    }
+  }
+}
