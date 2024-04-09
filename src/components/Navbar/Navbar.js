@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <header className='container'>
             <nav className="navbar">
-                <h1>Coffee Shop</h1>
+                <span>Coffee Shop</span>
 
                 <ul>
                     <li><a href="#home" className="active">Home</a></li>

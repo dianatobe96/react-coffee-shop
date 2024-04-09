@@ -1,5 +1,7 @@
 import './App.css';
+import Home from './components/Home/Home';
 import Menu from './components/Menu/Menu';
+import Navbar from './components/Navbar/Navbar';
 import Team from './components/Team/Team';
 import Clients from './components/Clients/Clients';
 
