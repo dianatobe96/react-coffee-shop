@@ -5,6 +5,13 @@
     text-align: center;
 }
 
+.textclient2 {
+    color: #bc9a6c;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
 .cardclients {
     display: flex;
     gap: 3em;

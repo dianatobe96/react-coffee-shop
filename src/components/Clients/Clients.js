@@ -10,6 +10,7 @@ import client6 from "../../assets/images/client6.png"
 export default function Clients() {
     return (
         <div className="container">
+            <h5 className="textclient2">Partners & Clients</h5>
             <h2 className="textclients">We work with the best people</h2>
 
                 <div className="cardclients">
