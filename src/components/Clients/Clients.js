@@ -10,7 +10,7 @@ import client6 from "../../assets/images/client6.png"
 export default function Clients() {
     return (
         <div className="container">
-            <h2 className="textclients">Clients</h2>
+            <h2 className="textclients">We work with the best people</h2>
 
                 <div className="cardclients">
                 <Card image={{ url: client1, width: 20, height: 10 }} title="" subtitle="" align='left' />
