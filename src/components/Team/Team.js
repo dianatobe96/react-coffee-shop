@@ -9,7 +9,7 @@ import chef4 from "../../assets/images/chef4.jpg";
 export default function Team() {
     return (
         <div>
-            <h1>Meet our team</h1>
+            <h2 className="textteam">Meet our team</h2>
             
              <Card image={{ url: chef1, width: 15, height: 15 }} title="Bulbul Hassan" subtitle="Chef" align='left' />
              <Card image={{ url: chef2, width: 15, height: 15 }} title="Lia Smith" subtitle="Founder" align='left' />

@@ -1,0 +1,12 @@
+.cardmenu {
+    display: flex;
+    gap: 3em;
+
+}
+
+.text {
+    color: #bc9a6c;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    text-align: center;
+}

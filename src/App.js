@@ -8,10 +8,14 @@ import Clients from './components/Clients/Clients';
 
 function App() {
   return (<>
-  <Menu/>
-  <Team/>
-  <Clients/>
-    
+    <section className='hero'>
+      <Navbar />
+      <Home />
+    </section>
+    <Menu />
+    <Team />
+    <Clients />
+
   </>);
 }
 
