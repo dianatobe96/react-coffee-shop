@@ -14,12 +14,12 @@ export default function Clients() {
             <h2 className="textclients">We work with the best people</h2>
 
                 <div className="cardclients">
-                <Card image={{ url: client1, width: 18, height: 10 }} title="" subtitle="" align='left' />
-                <Card image={{ url: client2, width: 12, height: 10 }} title="" subtitle="" align='left' />
-                <Card image={{ url: client3, width: 12, height: 10 }} title="" subtitle="" align='left' />
-                <Card image={{ url: client4, width: 12, height: 10 }} title="" subtitle="" align='left' />
-                <Card image={{ url: client5, width: 12, height: 10 }} title="" subtitle="" align='left' />
-                <Card image={{ url: client6, width: 12, height: 10 }} title="" subtitle="" align='left' />
+                <Card image={{ url: client1, width: 9, height: 5 }} title="" subtitle="" align='left' />
+                <Card image={{ url: client2, width: 7, height: 6 }} title="" subtitle="" align='left' />
+                <Card image={{ url: client3, width: 7, height: 6 }} title="" subtitle="" align='left' />
+                <Card image={{ url: client4, width: 7, height: 6 }} title="" subtitle="" align='left' />
+                <Card image={{ url: client5, width: 7, height: 6 }} title="" subtitle="" align='left' />
+                <Card image={{ url: client6, width: 7, height: 6 }} title="" subtitle="" align='left' />
                 </div>
             </div>
     )
