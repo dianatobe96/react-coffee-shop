@@ -1,7 +1,100 @@
 import './About.css';
+import coffeeImg1 from '../../assets/images/photo3.jpg';
+import coffeeImg2 from '../../assets/images/photo2.jpg';
 
 export default function About() {
     return (
-        <div>About</div>
+        <div>
+        <section id="about" class="d-flex">
+          <div class="left-side">
+             <img src={coffeeImg1} alt="Cup of coffee" />
+             <img src={coffeeImg2} alt="Cup of coffee" />
+          </div>
+          <div class="right-side">
+            <h4>About us</h4>
+            <h2 class="title">We are the best quality Coffee maker</h2>
+            <p>
+              Step into our cozy coffee haven, where the aroma of freshly brewed
+              beans dances in the air,welcoming you to savor the perfect cup of
+              indulgence. Discover a sanctuary where every sip tells a story,and
+              every moment is a celebration of the rich tapestry of coffee
+              culture.
+            </p>
+
+            <ul class="list">
+              <li>Experienced Chefs</li>
+              <li>Fresh & Organic Foods</li>
+              <li>Different Coffee & Drinks</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="why-choose-us" class="d-flex align-items-center">
+          <div class="left-side">
+            <h4>Why choose us</h4>
+            <h1 class="title">Best quality food and coffee maker</h1>
+
+            <p>
+              This coffee shop stands out for its exceptional brews, cozy
+              ambiance, and friendly service, making it the best choice for any
+              coffee lover.
+            </p>
+
+            <ul>
+              <li class="d-flex">
+                <div>
+                  <img
+                    class="list-icon quality-icon"
+                    src="./assets/icons/iconcoffe.svg"
+                    alt="Quality Icon"
+                  />
+                </div>
+                <div class="quality-text">
+                  <h2>High quality coffee</h2>
+                  <p>Rich, aromatic, smooth, premium, satisfying.</p>
+                </div>
+              </li>
+
+              <li class="d-flex">
+                <div>
+                  <img
+                    class="list-icon cheficon"
+                    src="./assets/icons/iconchef.svg"
+                    alt="cheficon"
+                  />
+                </div>
+                <div class="quality-text">
+                  <h2>Best chef & Team</h2>
+                  <p>Skilled, innovative, passionate, experienced, creative.</p>
+                </div>
+              </li>
+
+              <li class="d-flex">
+                <div>
+                  <img
+                    class="list-icon promoicon"
+                    src="./assets/icons/iconpromo.svg"
+                    alt="promo"
+                  />
+                </div>
+                <div class="quality-text">
+                  <h2>Promo and deal</h2>
+                  <p>Discounts, deals, specials, loyalty rewards.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="right-side">
+            <img src="./assets/images/photo5.jpg" alt="photo5" />
+            <p>
+              "Coffee shops: a haven for caffeine, community, and relaxation
+              vibes."
+              <br />
+              Alen Barg
+            </p>
+          </div>
+        </section>
+    </div>    
     )
 }
