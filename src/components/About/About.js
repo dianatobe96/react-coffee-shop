@@ -1,6 +1,10 @@
 import './About.css';
 import coffeeImg1 from '../../assets/images/photo3.jpg';
 import coffeeImg2 from '../../assets/images/photo2.jpg';
+import coffeeIcon from '../../assets/icons/iconcoffe.svg';
+import ChefIcon from '../../assets/icons/iconchef.svg';
+import PromoIcon from '../../assets/icons/iconpromo.svg';
+import CoffeRight from '../../assets/images/photo5.jpg';
 
 export default function About() {
     return (
@@ -43,11 +47,7 @@ export default function About() {
             <ul>
               <li class="d-flex">
                 <div>
-                  <img
-                    class="list-icon quality-icon"
-                    src="./assets/icons/iconcoffe.svg"
-                    alt="Quality Icon"
-                  />
+                <img src={coffeeIcon} alt="Icon coffee" />  
                 </div>
                 <div class="quality-text">
                   <h2>High quality coffee</h2>
@@ -57,11 +57,7 @@ export default function About() {
 
               <li class="d-flex">
                 <div>
-                  <img
-                    class="list-icon cheficon"
-                    src="./assets/icons/iconchef.svg"
-                    alt="cheficon"
-                  />
+                  <img src={ChefIcon} alt="Icon coffee" />  
                 </div>
                 <div class="quality-text">
                   <h2>Best chef & Team</h2>
@@ -71,11 +67,7 @@ export default function About() {
 
               <li class="d-flex">
                 <div>
-                  <img
-                    class="list-icon promoicon"
-                    src="./assets/icons/iconpromo.svg"
-                    alt="promo"
-                  />
+                  <img src={PromoIcon} alt="Icon coffee" />  
                 </div>
                 <div class="quality-text">
                   <h2>Promo and deal</h2>
@@ -86,7 +78,7 @@ export default function About() {
           </div>
 
           <div class="right-side">
-            <img src="./assets/images/photo5.jpg" alt="photo5" />
+            <img src={CoffeRight} alt="Icon coffee" />  
             <p>
               "Coffee shops: a haven for caffeine, community, and relaxation
               vibes."
