@@ -3,3 +3,8 @@
     font-family: "Inter", sans-serif;
     font-style: normal;
 }
+
+.cardclients {
+    display: flex;
+    gap: 3em;
+}
