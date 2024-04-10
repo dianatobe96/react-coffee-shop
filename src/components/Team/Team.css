@@ -2,4 +2,10 @@
     color: #bc9a6c;
     font-family: "Inter", sans-serif;
     font-style: normal;
+    text-align: center;
+}
+
+.cardteam {
+    display: flex;
+    gap: 3em;
 }
