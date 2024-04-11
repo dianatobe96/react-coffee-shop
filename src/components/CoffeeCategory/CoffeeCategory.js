@@ -37,7 +37,7 @@ export default function CoffeeCategory() {
 
                         <li>
                         <div>
-                            <img className='list-icon cheficon' src={Latte} alt="Cafe Latte Icon" />
+                            <img className='list-icon' src={Latte} alt="Cafe Latte Icon" />
                         </div>
                         <div className="quality-text">
                             <h3>Cafe latte</h3>
@@ -77,7 +77,7 @@ export default function CoffeeCategory() {
                             <p>Fluffy, golden, sweet breakfast treat.</p>
                         </div>
                         <div>
-                             <img className='list-icon cheficon' src={Pancakes} alt="pancakes" />
+                             <img className='list-icon' src={Pancakes} alt="pancakes" />
                         </div>
                         </li>
 
