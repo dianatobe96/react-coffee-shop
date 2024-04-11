@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import About from './components/About/About';
 import Team from './components/Team/Team';
 import Clients from './components/Clients/Clients';
+import CoffeeCategory from './components/CoffeeCategory/CoffeeCategory';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       
     </section>
     <About/>
+    <CoffeeCategory/>
     <Menu />
     <Team />
    
