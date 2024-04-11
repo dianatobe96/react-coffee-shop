@@ -8,15 +8,15 @@ import CoffeRight from '../../assets/images/photo5.jpg';
 
 export default function About() {
     return (
-        <div>
-        <section id="about" class="d-flex">
-          <div class="left-side">
-             <img src={coffeeImg1} alt="Cup of coffee" />
-             <img src={coffeeImg2} alt="Cup of coffee" />
+        <div className='hasmargin'>
+        <section id="about" className="d-flex container">
+          <div className="left-side">
+             <img className='img-front' src={coffeeImg1} alt="Cup of coffee" />
+             <img className='img-back' src={coffeeImg2} alt="Cup of coffee" />
           </div>
-          <div class="right-side">
+          <div className="right-side">
             <h4>About us</h4>
-            <h2 class="title">We are the best quality Coffee maker</h2>
+            <h2 className="title">We are the best quality Coffee maker</h2>
             <p>
               Step into our cozy coffee haven, where the aroma of freshly brewed
               beans dances in the air,welcoming you to savor the perfect cup of
@@ -25,7 +25,7 @@ export default function About() {
               culture.
             </p>
 
-            <ul class="list">
+            <ul className="list">
               <li>Experienced Chefs</li>
               <li>Fresh & Organic Foods</li>
               <li>Different Coffee & Drinks</li>
@@ -33,8 +33,8 @@ export default function About() {
           </div>
         </section>
 
-        <section id="why-choose-us" class="d-flex align-items-center">
-          <div class="left-side">
+        <section id="why-choose-us" className="d-flex align-items-center">
+          <div className="left-side">
             <h4>Why choose us</h4>
             <h1 class="title">Best quality food and coffee maker</h1>
 
@@ -45,31 +45,31 @@ export default function About() {
             </p>
 
             <ul>
-              <li class="d-flex">
+              <li className="d-flex">
                 <div>
                 <img src={coffeeIcon} alt="Icon coffee" />  
                 </div>
-                <div class="quality-text">
+                <div className="quality-text">
                   <h2>High quality coffee</h2>
                   <p>Rich, aromatic, smooth, premium, satisfying.</p>
                 </div>
               </li>
 
-              <li class="d-flex">
+              <li className="d-flex">
                 <div>
                   <img src={ChefIcon} alt="Icon coffee" />  
                 </div>
-                <div class="quality-text">
+                <div className="quality-text">
                   <h2>Best chef & Team</h2>
                   <p>Skilled, innovative, passionate, experienced, creative.</p>
                 </div>
               </li>
 
-              <li class="d-flex">
+              <li className="d-flex">
                 <div>
                   <img src={PromoIcon} alt="Icon coffee" />  
                 </div>
-                <div class="quality-text">
+                <div className="quality-text">
                   <h2>Promo and deal</h2>
                   <p>Discounts, deals, specials, loyalty rewards.</p>
                 </div>
@@ -77,7 +77,7 @@ export default function About() {
             </ul>
           </div>
 
-          <div class="right-side">
+          <div className="right-side">
             <img src={CoffeRight} alt="Icon coffee" />  
             <p>
               "Coffee shops: a haven for caffeine, community, and relaxation
