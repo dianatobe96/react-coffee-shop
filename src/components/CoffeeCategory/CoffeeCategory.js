@@ -27,7 +27,7 @@ export default function CoffeeCategory() {
                     <ul>
                         <li>
                         <div>
-                        <img className='list-icon quality-icon' src={Cappuccino} alt="Cappuccino Icon" />
+                        <img className='list-icon' src={Cappuccino} alt="Cappuccino Icon" />
                         </div>
                         <div className="quality-text">
                             <h3>Cappuccino</h3>
@@ -67,7 +67,7 @@ export default function CoffeeCategory() {
                             <p>Strong, aromatic, finely ground espresso.</p>
                         </div>
                         <div>
-                             <img className='list-icon quality-icon' src={TurkishCoffee} alt="Turkish Coffee Icon" />
+                             <img className='list-icon' src={TurkishCoffee} alt="Turkish Coffee Icon" />
                         </div>
                         </li>
 
