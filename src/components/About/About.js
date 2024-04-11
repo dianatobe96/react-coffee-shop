@@ -33,60 +33,62 @@ export default function About() {
           </div>
         </section>
 
-        <section id="why-choose-us" className="d-flex align-items-center">
-          <div className="left-side">
-            <h4>Why choose us</h4>
-            <h1 class="title">Best quality food and coffee maker</h1>
+        <div className='hasmargin'>
+            <section id="why-choose-us" className="d-flex container align-items-center">
+            <div className="left-side">
+                <h4>Why choose us</h4>
+                <h1 class="title">Best quality food and coffee maker</h1>
 
-            <p>
-              This coffee shop stands out for its exceptional brews, cozy
-              ambiance, and friendly service, making it the best choice for any
-              coffee lover.
-            </p>
+                <p>
+                This coffee shop stands out for its exceptional brews, cozy
+                ambiance, and friendly service, making it the best choice for any
+                coffee lover.
+                </p>
 
-            <ul>
-              <li className="d-flex">
-                <div>
-                <img src={coffeeIcon} alt="Icon coffee" />  
-                </div>
-                <div className="quality-text">
-                  <h2>High quality coffee</h2>
-                  <p>Rich, aromatic, smooth, premium, satisfying.</p>
-                </div>
-              </li>
+                <ul>
+                <li className="d-flex">
+                    <div>
+                    <img className='list-icon quality-icon' src={coffeeIcon} alt="Icon coffee" />  
+                    </div>
+                    <div className="quality-text">
+                    <h2>High quality coffee</h2>
+                    <p>Rich, aromatic, smooth, premium, satisfying.</p>
+                    </div>
+                </li>
 
-              <li className="d-flex">
-                <div>
-                  <img src={ChefIcon} alt="Icon coffee" />  
-                </div>
-                <div className="quality-text">
-                  <h2>Best chef & Team</h2>
-                  <p>Skilled, innovative, passionate, experienced, creative.</p>
-                </div>
-              </li>
+                <li className="d-flex">
+                    <div>
+                    <img className='list-icon cheficon' src={ChefIcon} alt="Icon coffee" />  
+                    </div>
+                    <div className="quality-text">
+                    <h2>Best chef & Team</h2>
+                    <p>Skilled, innovative, passionate, experienced, creative.</p>
+                    </div>
+                </li>
 
-              <li className="d-flex">
-                <div>
-                  <img src={PromoIcon} alt="Icon coffee" />  
-                </div>
-                <div className="quality-text">
-                  <h2>Promo and deal</h2>
-                  <p>Discounts, deals, specials, loyalty rewards.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
+                <li className="d-flex">
+                    <div>
+                    <img className='list-icon promoicon' src={PromoIcon} alt="Icon coffee" />  
+                    </div>
+                    <div className="quality-text">
+                    <h2>Promo and deal</h2>
+                    <p>Discounts, deals, specials, loyalty rewards.</p>
+                    </div>
+                </li>
+                </ul>
+            </div>
 
-          <div className="right-side">
-            <img src={CoffeRight} alt="Icon coffee" />  
-            <p>
-              "Coffee shops: a haven for caffeine, community, and relaxation
-              vibes."
-              <br />
-              Alen Barg
-            </p>
-          </div>
-        </section>
+            <div className="right-side">
+                <img src={CoffeRight} alt="Icon coffee" />  
+                <p>
+                "Coffee shops: a haven for caffeine, community, and relaxation
+                vibes."
+                <br />
+                Alen Barg
+                </p>
+            </div>
+            </section>
+        </div>
     </div>    
     )
 }
