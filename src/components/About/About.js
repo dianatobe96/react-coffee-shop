@@ -48,7 +48,7 @@ export default function About() {
                 <ul>
                 <li className="d-flex">
                     <div>
-                    <img className='list-icon quality-icon' src={coffeeIcon} alt="Icon coffee" />  
+                    <img className='list-icon' src={coffeeIcon} alt="Icon coffee" />  
                     </div>
                     <div className="quality-text">
                     <h2>High quality coffee</h2>
@@ -58,7 +58,7 @@ export default function About() {
 
                 <li className="d-flex">
                     <div>
-                    <img className='list-icon cheficon' src={ChefIcon} alt="Icon coffee" />  
+                    <img className='list-icon' src={ChefIcon} alt="Icon coffee" />  
                     </div>
                     <div className="quality-text">
                     <h2>Best chef & Team</h2>
@@ -68,7 +68,7 @@ export default function About() {
 
                 <li className="d-flex">
                     <div>
-                    <img className='list-icon promoicon' src={PromoIcon} alt="Icon coffee" />  
+                    <img className='list-icon' src={PromoIcon} alt="Icon coffee" />  
                     </div>
                     <div className="quality-text">
                     <h2>Promo and deal</h2>
