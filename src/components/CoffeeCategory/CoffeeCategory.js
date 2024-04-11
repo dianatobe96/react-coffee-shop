@@ -22,7 +22,7 @@ export default function CoffeeCategory() {
                     </p>
                 </header>
 
-                <section className="categories-info d-flex align-items-center">
+                <section className="categories-info d-flex align-items-center container">
                     <div className="left-side">
                     <ul>
                         <li>
