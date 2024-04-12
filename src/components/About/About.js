@@ -5,35 +5,35 @@ import coffeeImg2 from '../../assets/images/photo2.jpg';
 import coffeeIcon from '../../assets/icons/iconcoffe.svg';
 import ChefIcon from '../../assets/icons/iconchef.svg';
 import PromoIcon from '../../assets/icons/iconpromo.svg';
-import CoffeRight from '../../assets/images/photo5.jpg';
+import CoffeeRight from '../../assets/images/photo5.jpg';
 
-export default function About({ aboutHeading }) {
+export default function About({ headingText = 'About Us' }) {
     const HoverText = ({ text, textStyle }) => {
         const [isHovered, setIsHovered] = useState(false);
-      
+
         const handleMouseEnter = () => {
-          setIsHovered(true);
+            setIsHovered(true);
         };
-      
+
         const handleMouseLeave = () => {
-          setIsHovered(false);
+            setIsHovered(false);
         };
-      
+
         const defaultStyle = {
-          color: isHovered ? 'sandybrown' : 'saddlebrown',
-          transition: 'color 0.3s ease',
+            color: isHovered ? 'sandybrown' : 'saddlebrown',
+            transition: 'color 0.3s ease',
         };
-      
+
         const mergedStyle = { ...defaultStyle, ...textStyle };
-      
+
         return (
-          <p
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            style={mergedStyle}
-          >
-            {text}
-          </p>
+            <p
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+                style={mergedStyle}
+            >
+                {text}
+            </p>
         );
     };
     return (
@@ -44,10 +44,10 @@ export default function About({ aboutHeading }) {
                     <img className='img-back' src={coffeeImg2} alt="Cup of coffee" />
                 </div>
                 <div className="right-side">
-                     <h4>{aboutHeading}</h4>
+                    <h4>{headingText}</h4>
                     <HoverText
-                    text="We are the best quality Coffee maker"
-                    textStyle={{ fontWeight: 'bold', fontSize: '48px' }}
+                        text="We are the best quality Coffee maker"
+                        textStyle={{ fontWeight: 'bold', fontSize: '48px' }}
                     />
                     <p>
                         Step into our cozy coffee haven, where the aroma of freshly brewed
@@ -111,7 +111,7 @@ export default function About({ aboutHeading }) {
                     </div>
 
                     <div className="right-side">
-                        <img src={CoffeRight} alt="Icon coffee" />
+                        <img src={CoffeeRight} alt="Icon coffee" />
                         <p>
                             "Coffee shops: a haven for caffeine, community, and relaxation
                             vibes."
