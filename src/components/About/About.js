@@ -1,4 +1,5 @@
 import './About.css';
+import React, { useState } from 'react';
 import coffeeImg1 from '../../assets/images/photo3.jpg';
 import coffeeImg2 from '../../assets/images/photo2.jpg';
 import coffeeIcon from '../../assets/icons/iconcoffe.svg';
@@ -7,6 +8,34 @@ import PromoIcon from '../../assets/icons/iconpromo.svg';
 import CoffeRight from '../../assets/images/photo5.jpg';
 
 export default function About() {
+    const HoverText = ({ text, textStyle }) => {
+        const [isHovered, setIsHovered] = useState(false);
+      
+        const handleMouseEnter = () => {
+          setIsHovered(true);
+        };
+      
+        const handleMouseLeave = () => {
+          setIsHovered(false);
+        };
+      
+        const defaultStyle = {
+          color: isHovered ? 'sandybrown' : 'saddlebrown',
+          transition: 'color 0.3s ease',
+        };
+      
+        const mergedStyle = { ...defaultStyle, ...textStyle };
+      
+        return (
+          <p
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            style={mergedStyle}
+          >
+            {text}
+          </p>
+        );
+    };
     return (
         <div className='hasmargin'>
             <section id="about" className="d-flex container">
@@ -16,7 +45,10 @@ export default function About() {
                 </div>
                 <div className="right-side">
                     <h4>About us</h4>
-                    <h2 className="title">We are the best quality Coffee maker</h2>
+                    <HoverText
+                    text="We are the best quality Coffee maker"
+                    textStyle={{ fontWeight: 'bold', fontSize: '48px' }}
+                    />
                     <p>
                         Step into our cozy coffee haven, where the aroma of freshly brewed
                         beans dances in the air,welcoming you to savor the perfect cup of

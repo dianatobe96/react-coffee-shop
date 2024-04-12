@@ -147,3 +147,10 @@
   font-size: 1.5rem;
   color: #bc9a6c;
 }
+
+.hover-text{
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: #bc9a6c;
+  font-size: 48px;
+}
