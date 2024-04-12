@@ -68,3 +68,8 @@
 .quality-text h2 {
     margin-top: 5px;
 }  
+
+.list-icon.hovered {
+    padding-left: 20px;
+    /* Additional styles for hover */
+}

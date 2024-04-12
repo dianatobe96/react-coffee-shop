@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './CoffeeCategory.css';
 import Cappuccino from '../../assets/icons/icon1left.svg';
 import Latte from '../../assets/icons/Icon2left.svg';
@@ -8,10 +9,33 @@ import CoffeeBag from '../../assets/icons/Icon3right.svg';
 import CupOfCoffee from '../../assets/images/photo4.jpg';
 
 export default function CoffeeCategory() {
+    const [hoverStates, setHoverStates] = useState([
+      { isHovered: false },
+      { isHovered: false },
+      { isHovered: false },
+      { isHovered: false },
+      { isHovered: false },
+      { isHovered: false }
+    ]);
+
+    const handleMouseEnter = (index) => {
+      const updatedHoverStates = [...hoverStates];
+      updatedHoverStates[index].isHovered = true;
+      setHoverStates(updatedHoverStates);
+    };
+  
+    const handleMouseLeave = (index) => {
+      const updatedHoverStates = [...hoverStates];
+      updatedHoverStates[index].isHovered = false;
+      setHoverStates(updatedHoverStates);
+    };
+  
     return (
+        
         <div>
              <section id="categories">
                 <header>
+
                     <h2 className="title">
                     Coffee <br />
                     Category
@@ -27,7 +51,11 @@ export default function CoffeeCategory() {
                     <ul>
                         <li>
                         <div>
-                        <img className='list-icon' src={Cappuccino} alt="Cappuccino Icon" />
+                        <img className='list-icon' src={Cappuccino} alt="Cappuccino Icon" 
+                          onMouseEnter={() => handleMouseEnter(0)}
+                          onMouseLeave={() => handleMouseLeave(0)}
+                          style={{ padding: hoverStates[0].isHovered ? '10px' : '0px', transition: 'padding 0.3s ease' }}
+                          />
                         </div>
                         <div className="quality-text">
                             <h3>Cappuccino</h3>
@@ -37,7 +65,11 @@ export default function CoffeeCategory() {
 
                         <li>
                         <div>
-                            <img className='list-icon' src={Latte} alt="Cafe Latte Icon" />
+                            <img className='list-icon' src={Latte} alt="Cafe Latte Icon"
+                            onMouseEnter={() => handleMouseEnter(1)}
+                            onMouseLeave={() => handleMouseLeave(1)}
+                            style={{ padding: hoverStates[1].isHovered ? '10px' : '0px', transition: 'padding 0.3s ease' }}
+                            />
                         </div>
                         <div className="quality-text">
                             <h3>Cafe latte</h3>
@@ -47,7 +79,11 @@ export default function CoffeeCategory() {
 
                         <li>
                         <div>
-                        <img className='list-icon' src={DarkCoffee} alt="Dark Coffee Icon" />
+                        <img className='list-icon' src={DarkCoffee} alt="Dark Coffee Icon" 
+                        onMouseEnter={() => handleMouseEnter(2)}
+                        onMouseLeave={() => handleMouseLeave(2)}
+                        style={{ padding: hoverStates[2].isHovered ? '10px' : '0px', transition: 'padding 0.3s ease' }}
+                        />
                         </div>
                         <div className="quality-text">
                             <h3>Dark coffee</h3>
@@ -67,7 +103,11 @@ export default function CoffeeCategory() {
                             <p>Strong, aromatic, finely ground espresso.</p>
                         </div>
                         <div>
-                             <img className='list-icon' src={TurkishCoffee} alt="Turkish Coffee Icon" />
+                             <img className='list-icon' src={TurkishCoffee} alt="Turkish Coffee Icon" 
+                             onMouseEnter={() => handleMouseEnter(3)}
+                             onMouseLeave={() => handleMouseLeave(3)}
+                             style={{ padding: hoverStates[3].isHovered ? '10px' : '0px', transition: 'padding 0.3s ease' }}
+                             />
                         </div>
                         </li>
 
@@ -77,7 +117,11 @@ export default function CoffeeCategory() {
                             <p>Fluffy, golden, sweet breakfast treat.</p>
                         </div>
                         <div>
-                             <img className='list-icon' src={Pancakes} alt="pancakes" />
+                             <img className='list-icon' src={Pancakes} alt="pancakes" 
+                             onMouseEnter={() => handleMouseEnter(4)}
+                             onMouseLeave={() => handleMouseLeave(4)}
+                             style={{ padding: hoverStates[4].isHovered ? '10px' : '0px', transition: 'padding 0.3s ease' }}
+                             />
                         </div>
                         </li>
 
@@ -87,7 +131,11 @@ export default function CoffeeCategory() {
                             <p>Convenient, portable, ground coffee pouch.</p>
                         </div>
                         <div>
-                            <img className='list-icon' src={CoffeeBag} alt="coffee bag" />
+                            <img className='list-icon' src={CoffeeBag} alt="coffee bag" 
+                            onMouseEnter={() => handleMouseEnter(5)}
+                            onMouseLeave={() => handleMouseLeave(5)}
+                            style={{ padding: hoverStates[5].isHovered ? '10px' : '0px', transition: 'padding 0.3s ease' }}
+                            />
                         </div>
                         </li>
                     </ul>
