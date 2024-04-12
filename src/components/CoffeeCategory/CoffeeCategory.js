@@ -8,7 +8,7 @@ import Pancakes from '../../assets/icons/icon2right.svg';
 import CoffeeBag from '../../assets/icons/Icon3right.svg';
 import CupOfCoffee from '../../assets/images/photo4.jpg';
 
-export default function CoffeeCategory() {
+export default function CoffeeCategory(props) {
     const [hoverStates, setHoverStates] = useState([
       { isHovered: false },
       { isHovered: false },
@@ -58,8 +58,8 @@ export default function CoffeeCategory() {
                           />
                         </div>
                         <div className="quality-text">
-                            <h3>Cappuccino</h3>
-                            <p>Rich, frothy espresso with foam</p>
+                            <h3>{props.categories[0].name}</h3>
+                            <p>{props.categories[0].description}</p>
                         </div>
                         </li>
 
@@ -72,8 +72,8 @@ export default function CoffeeCategory() {
                             />
                         </div>
                         <div className="quality-text">
-                            <h3>Cafe latte</h3>
-                            <p>Creamy espresso with steamed milk.</p>
+                            <h3>{props.categories[1].name}</h3>
+                            <p>{props.categories[1].description}</p>
                         </div>
                         </li>
 
@@ -86,8 +86,8 @@ export default function CoffeeCategory() {
                         />
                         </div>
                         <div className="quality-text">
-                            <h3>Dark coffee</h3>
-                            <p>Bold, robust, intense, rich flavor.</p>
+                            <h3>{props.categories[2].name}</h3>
+                            <p>{props.categories[2].description}</p>
                         </div>
                         </li>
                     </ul>
@@ -99,8 +99,8 @@ export default function CoffeeCategory() {
                     <ul>
                         <li>
                         <div className="quality-text">
-                            <h3>Turkish coffee</h3>
-                            <p>Strong, aromatic, finely ground espresso.</p>
+                            <h3>{props.categories[3].name}</h3>
+                            <p>{props.categories[3].description}</p>
                         </div>
                         <div>
                              <img className='list-icon' src={TurkishCoffee} alt="Turkish Coffee Icon" 
@@ -113,8 +113,8 @@ export default function CoffeeCategory() {
 
                         <li>
                         <div className="quality-text">
-                            <h3>Pancakes</h3>
-                            <p>Fluffy, golden, sweet breakfast treat.</p>
+                            <h3>{props.categories[4].name}</h3>
+                            <p>{props.categories[4].description}</p>
                         </div>
                         <div>
                              <img className='list-icon' src={Pancakes} alt="pancakes" 
@@ -127,8 +127,8 @@ export default function CoffeeCategory() {
 
                         <li>
                         <div className="quality-text">
-                            <h3>Coffee Bag</h3>
-                            <p>Convenient, portable, ground coffee pouch.</p>
+                            <h3>{props.categories[5].name}</h3>
+                            <p>{props.categories[5].description}</p>
                         </div>
                         <div>
                             <img className='list-icon' src={CoffeeBag} alt="coffee bag" 
@@ -145,3 +145,14 @@ export default function CoffeeCategory() {
         </div>
     )
 }
+
+CoffeeCategory.defaultProps = {
+    categories: [
+        { name: "Cappuccino", description: "Rich, frothy espresso with foam" },
+        { name: "Cafe Latte", description: "Creamy espresso with steamed milk." },
+        { name: "Dark Coffee", description: "Bold, robust, intense, rich flavor." },
+        { name: "Turkish Coffee", description: "Strong, aromatic, finely ground espresso." },
+        { name: "Pancakes", description: "Fluffy, golden, sweet breakfast treat." },
+        { name: "Coffee Bag", description: "Convenient, portable, ground coffee pouch." }
+    ]
+};
