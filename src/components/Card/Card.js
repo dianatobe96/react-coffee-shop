@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { useEffect, useState } from 'react';
 import './Card.css';
 
 /**
@@ -17,15 +17,19 @@ import './Card.css';
 export default function Card(props) {
     const { image, title, subtitle, align = 'center' } = props;
 
-    const imageStyle = {
-        width: `${image.width ?? 10}em`,
-        height: `${image.height ?? 10}em`,
-    };
+    const [imageStyle, setImageStyle] = useState({ width: '10em', height: '10em' });
+
+    useEffect(() => {
+        setImageStyle({
+            width: `${image.width ?? 10}em`,
+            height: `${image.height ?? 10}em`,
+        });
+    }, [image.width, image.height]);
 
     return (
         <article className="card">
             <header className='card-header'>
-                <img src={image.url} style={imageStyle} />
+                <img src={image.url} style={{ ...imageStyle }} alt="Card" />
             </header>
 
             <div className='card-body' style={{ textAlign: align }}>
