@@ -8,12 +8,11 @@
     & button {
         color: white;
         font-weight: bold;
-        background-color: #bc9a6c;
         padding: 1.2em 3em;
         margin-top: 3rem;
 
         &:hover {
-            background-color: #bca585;
+            background-color: #bca585 !important;
         }
     }
 
