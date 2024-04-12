@@ -1,10 +1,17 @@
+import { useEffect, useState } from 'react';
 import './Navbar.css';
 
-export default function Navbar() {
+export default function Navbar({ logoText = 'Coffee Shop' }) {
+    const [logo, setLogo] = useState('');
+
+    useEffect(() => {
+        setLogo(logoText);
+    }, [logoText]);
+
     return (
         <header className='container'>
             <nav className="navbar">
-                <span>Coffee Shop</span>
+                <span>{logo}</span>
 
                 <ul>
                     <li><a href="#home" className="active">Home</a></li>
