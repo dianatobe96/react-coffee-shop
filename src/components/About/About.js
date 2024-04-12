@@ -7,7 +7,7 @@ import ChefIcon from '../../assets/icons/iconchef.svg';
 import PromoIcon from '../../assets/icons/iconpromo.svg';
 import CoffeRight from '../../assets/images/photo5.jpg';
 
-export default function About() {
+export default function About({ aboutHeading }) {
     const HoverText = ({ text, textStyle }) => {
         const [isHovered, setIsHovered] = useState(false);
       
@@ -44,7 +44,7 @@ export default function About() {
                     <img className='img-back' src={coffeeImg2} alt="Cup of coffee" />
                 </div>
                 <div className="right-side">
-                    <h4>About us</h4>
+                     <h4>{aboutHeading}</h4>
                     <HoverText
                     text="We are the best quality Coffee maker"
                     textStyle={{ fontWeight: 'bold', fontSize: '48px' }}

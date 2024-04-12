@@ -148,9 +148,13 @@
   color: #bc9a6c;
 }
 
-.hover-text{
+/* .hover-text{
   font-family: "Inter", sans-serif;
   font-weight: bold;
   color: #bc9a6c;
   font-size: 48px;
 }
+
+.hover-text:hover {
+  color: blue;
+} */

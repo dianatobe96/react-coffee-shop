@@ -16,7 +16,7 @@ function App() {
             <Home />
         </section>
 
-        <About />
+        <About aboutHeading="About US" />
         <CoffeeCategory />
         <Menu />
         <Team />
