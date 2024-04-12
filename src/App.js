@@ -10,21 +10,19 @@ import Footer from './components/Footer/Footer';
 
 
 function App() {
-  return (<>
-    <section className='hero'>
-      <Navbar />
-      <Home />
-      
-    </section>
-    <About/>
-    <CoffeeCategory/>
-    <Menu />
-    <Team />
-   
-    <Clients />
-    <Footer/>
+    return (<>
+        <section className='hero'>
+            <Navbar />
+            <Home />
+        </section>
 
-  </>);
+        <About />
+        <CoffeeCategory />
+        <Menu />
+        <Team />
+        <Clients />
+        <Footer />
+    </>);
 }
 
 export default App;
