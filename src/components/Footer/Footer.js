@@ -32,7 +32,7 @@ function ContactItem({ icon, text, link }) {
   );
 }
 
-export default function Footer() {
+export default function Footer({ footerText }) { 
   return (
     <div>
       <div className="footer-outer-wrapper d-flex align-items-center">
@@ -41,8 +41,7 @@ export default function Footer() {
             <div className="left-side">
               <h2>Coffee Shop</h2>
               <p>
-                To our coffee oasis! Explore our menu, discover our story, and join
-                our community. Contact us for inquiries. Enjoy your brew!
+                {footerText} {/* This in same as Text in Home page */}
               </p>
             </div>
 

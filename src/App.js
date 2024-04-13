@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 
 
 function App() {
+    const footerText = "Heal the world with coffee";
     return (<>
         <section className='hero'>
             <Navbar />
@@ -21,7 +22,7 @@ function App() {
         <Menu />
         <Team />
         <Clients />
-        <Footer />
+        <Footer footerText={footerText} />
     </>);
 }
 
