@@ -20,8 +20,8 @@ function App() {
         <About headingText="About US" />
         <CoffeeCategory />
         <Menu />
-        <Team />
-        <Clients />
+        <Team/>
+        <Clients/>
         <Footer footerText={footerText} />
     </>);
 }
